@@ -9,7 +9,6 @@ vector<int> buildArray(vector<int> &nums) {
     for (int index =0; index <array_size; index++) {
         ans[index] = nums[nums[index]];
     }
-    cout << "build array: " << sizeof(nums) << endl;
     return ans;    
 }
 
