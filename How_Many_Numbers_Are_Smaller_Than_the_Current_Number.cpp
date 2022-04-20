@@ -14,9 +14,6 @@ vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
     for (int index =1; index < 102; index++) {
         count[index] += count[index -1];
     }
-    for (const int &i: count) {
-        cout << "bool: " << i << endl;
-    }
 
     for (int index =0; index < numsSize; index++) {
         smallerSize[index] = count[nums[index]];
